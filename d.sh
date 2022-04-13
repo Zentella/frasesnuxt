@@ -20,7 +20,7 @@
 #repositorio debe ser publico, no privado
 
 git add .
-git commit -m 'vuetify-logo'
+git commit -m 'frases'
 git push
 
 npm run generate

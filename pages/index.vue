@@ -1,83 +1,99 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-          <h4>Hola</h4>
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+  <v-img
+    :src="require('../static/img/frase' + computa + '.webp')"
+    :alt="items[computa].txt"
+    :title="items[computa].autor"
+    width="100%"
+    height="100%"
+  />
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
-}
+  name: "IndexPage",
+
+  data() {
+    return {
+      computa: parseInt(Math.random() * 13),
+      items: [
+        {
+          id: 0,
+          txt: "Pregúntate si lo que estás haciendo hoy te acerca al lugar en el que quieres estar mañana",
+          autor: "Walt Disney",
+        },
+        {
+          id: 1,
+          txt: "El Hombre que mueve una montaña, comienza llevando pequeñas piedras",
+          autor: "Confucio",
+        },
+        {
+          id: 2,
+          txt: "El hombre sabio busca lo que desea en su interior; el no sabio lo busca en los demás",
+          autor: "Confucio",
+        },
+        {
+          id: 3,
+          txt: "El secreto del cambio es enfocar toda tu energía, no en luchar contra lo viejo, si no en construir lo nuevo.",
+          autor: "Sócrates",
+        },
+        {
+          id: 4,
+          txt: "Si buscas resultados distintos, no hagas siempre lo mismo.",
+          autor: "Albert Einstein",
+        },
+        {
+          id: 5,
+          txt: "El éxito en la vida no se mide por lo que logras, si no por los obstáculos que superas.",
+          autor: "Jaime Cardoso",
+        },
+        {
+          id: 6,
+          txt: "Debes hacer las cosas que crees que no puedes hacer.",
+          autor: "Eleanor Roosevelt",
+        },
+        {
+          id: 7,
+          txt: "Lo único imposible es aquello que no intentas.",
+          autor: "Miguel d Cervantes Saavedra",
+        },
+        {
+          id: 8,
+          txt: "La diferencia entre donde estuviste ayer y donde starás mañana es lo que pienses, digas y hagas hoy.",
+          autor: "",
+        },
+        {
+          id: 9,
+          txt: "Cualquier persona que deja de aprender se vuelve viejo, ya sea a los veinte o a los ochenta. Cualquier persona que sigue aprendiendo se mantiene joven. La cosa más importante en la vida es mantener la mente joven.",
+          autor: "Henry Ford.",
+        },
+        {
+          id: 10,
+          txt: "Disfruta diviértete aprende y sé feliz",
+          autor: "Mauricio Vera Rodríguez",
+        },
+        {
+          id: 11,
+          txt: "Mejor que mil palabras vacías, es la palabra que trae la paz.",
+          autor: "Buda",
+        },
+        {
+          id: 12,
+          txt: "Que maravilloso ver a naciones enfrentadas en los deportes, mas nó en guerras",
+          autor: "Mauricio Vera Rodríguez",
+        },
+        {
+          id: 99,
+          txt: "",
+          autor: "",
+        },
+      ],
+    };
+  },
+};
 </script>
+
+<style scoped>
+img {
+  position: absolute;
+}
+</style>

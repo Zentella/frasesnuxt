@@ -19,8 +19,10 @@
 #habilitar gh-pages en github
 #repositorio debe ser publico, no privado
 
+# npm run dev
+
 git add .
-git commit -m 'frases'
+git commit -m 'sin ancho'
 git push
 
 npm run generate

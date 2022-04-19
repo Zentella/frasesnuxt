@@ -22,7 +22,7 @@
 # npm run dev
 
 git add .
-git commit -m 'sin ancho'
+git commit -m 'jesus'
 git push
 
 npm run generate

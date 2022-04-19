@@ -12,7 +12,7 @@ export default {
 
   data() {
     return {
-      computa: parseInt(Math.random() * 13),
+      computa: parseInt(Math.random() * 14),
       items: [
         {
           id: 0,
@@ -78,6 +78,11 @@ export default {
           id: 12,
           txt: "Que maravilloso ver a naciones enfrentadas en los deportes, mas nó en guerras",
           autor: "Mauricio Vera Rodríguez",
+        },
+        {
+          id: 13,
+          txt: "Te he dicho estas cosas, para que en mí puedas tener paz. En este mundo tendrás problemas. ¡Pero anímate! Yo he vencido al mundo.",
+          autor: "Jesucristo",
         },
         {
           id: 99,

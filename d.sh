@@ -22,7 +22,7 @@
 # npm run dev
 
 git add .
-git commit -m 'jesus'
+git commit -m 'Programar'
 git push
 
 npm run generate

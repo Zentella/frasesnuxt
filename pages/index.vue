@@ -12,7 +12,7 @@ export default {
 
   data() {
     return {
-      computa: parseInt(Math.random() * 14),
+      computa: parseInt(Math.random() * 15),
       items: [
         {
           id: 0,
@@ -83,6 +83,11 @@ export default {
           id: 13,
           txt: "Te he dicho estas cosas, para que en mí puedas tener paz. En este mundo tendrás problemas. ¡Pero anímate! Yo he vencido al mundo.",
           autor: "Jesucristo",
+        },
+        {
+          id: 14,
+          txt: "Programar ... es como ... Jugar",
+          autor: "Mauricio Vera Rodríguez",
         },
         {
           id: 99,
